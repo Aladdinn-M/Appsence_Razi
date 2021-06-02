@@ -37,32 +37,33 @@
             this.close = new Bunifu.Framework.UI.BunifuImageButton();
             this.small_logo = new System.Windows.Forms.PictureBox();
             this.title = new System.Windows.Forms.Label();
-            this.desription = new System.Windows.Forms.Label();
             this.raziLogo = new System.Windows.Forms.PictureBox();
-            this.AppLogo = new System.Windows.Forms.PictureBox();
             this.btn_connect = new Bunifu.UI.WinForms.BunifuImageButton();
             this.txt_login = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_password = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.gunaAnimateWindow1 = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.gunaAnimateWindow2 = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelforms.SuspendLayout();
             this.topBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimise)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.small_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.raziLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AppLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelforms
             // 
             this.panelforms.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelforms.BackgroundImage")));
             this.panelforms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelforms.Controls.Add(this.pictureBox1);
+            this.panelforms.Controls.Add(this.pictureBox2);
             this.panelforms.Controls.Add(this.topBar);
-            this.panelforms.Controls.Add(this.desription);
             this.panelforms.Controls.Add(this.raziLogo);
-            this.panelforms.Controls.Add(this.AppLogo);
             this.panelforms.Controls.Add(this.btn_connect);
             this.panelforms.Controls.Add(this.txt_login);
             this.panelforms.Controls.Add(this.txt_password);
@@ -157,18 +158,6 @@
             this.title.TabIndex = 0;
             this.title.Text = "Appsence";
             // 
-            // desription
-            // 
-            this.desription.AutoSize = true;
-            this.desription.BackColor = System.Drawing.Color.Transparent;
-            this.desription.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.desription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(50)))));
-            this.desription.Location = new System.Drawing.Point(294, 132);
-            this.desription.Name = "desription";
-            this.desription.Size = new System.Drawing.Size(236, 48);
-            this.desription.TabIndex = 68;
-            this.desription.Text = "Gestion des absences \r\n       et du personnel";
-            // 
             // raziLogo
             // 
             this.raziLogo.BackColor = System.Drawing.Color.Transparent;
@@ -179,18 +168,6 @@
             this.raziLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.raziLogo.TabIndex = 67;
             this.raziLogo.TabStop = false;
-            // 
-            // AppLogo
-            // 
-            this.AppLogo.BackColor = System.Drawing.Color.Transparent;
-            this.AppLogo.Image = ((System.Drawing.Image)(resources.GetObject("AppLogo.Image")));
-            this.AppLogo.Location = new System.Drawing.Point(278, 35);
-            this.AppLogo.Margin = new System.Windows.Forms.Padding(0);
-            this.AppLogo.Name = "AppLogo";
-            this.AppLogo.Size = new System.Drawing.Size(252, 117);
-            this.AppLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.AppLogo.TabIndex = 66;
-            this.AppLogo.TabStop = false;
             // 
             // btn_connect
             // 
@@ -293,6 +270,29 @@
             this.bunifuDragControl1.TargetControl = this.topBar;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(289, 144);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(236, 45);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 71;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(274, 34);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(256, 132);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 70;
+            this.pictureBox2.TabStop = false;
+            // 
             // formConnexion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,14 +306,14 @@
             this.Text = "formConnexion";
             this.Load += new System.EventHandler(this.formConnexion_Load);
             this.panelforms.ResumeLayout(false);
-            this.panelforms.PerformLayout();
             this.topBar.ResumeLayout(false);
             this.topBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimise)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.small_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.raziLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AppLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -324,9 +324,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_login;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_password;
         private Bunifu.UI.WinForms.BunifuImageButton btn_connect;
-        private System.Windows.Forms.Label desription;
         private System.Windows.Forms.PictureBox raziLogo;
-        private System.Windows.Forms.PictureBox AppLogo;
         private Guna.UI.WinForms.GunaAnimateWindow gunaAnimateWindow1;
         private Bunifu.Framework.UI.BunifuGradientPanel topBar;
         private System.Windows.Forms.Label lbl_time;
@@ -336,5 +334,7 @@
         private System.Windows.Forms.Label title;
         private Guna.UI.WinForms.GunaAnimateWindow gunaAnimateWindow2;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

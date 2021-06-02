@@ -32,15 +32,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formHome));
             this.panelhome = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.btnBIG_cv = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnBIG_Abs = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnBIG_info = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnBIG_detaills = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnBIG_info = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnBIG_cv = new Bunifu.Framework.UI.BunifuImageButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.raziLogo = new System.Windows.Forms.PictureBox();
             this.AppLogo = new System.Windows.Forms.PictureBox();
             this.panelforms = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -56,18 +57,18 @@
             this.small_logo = new System.Windows.Forms.PictureBox();
             this.title = new System.Windows.Forms.Label();
             this.leftMenu = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.btn_logout = new Bunifu.Framework.UI.BunifuImageButton();
             this.btn_detaills = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btn_logout = new Bunifu.Framework.UI.BunifuImageButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.gunaAnimateWindow1 = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelhome.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBIG_cv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBIG_Abs)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBIG_info)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBIG_detaills)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBIG_info)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBIG_cv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.raziLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AppLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnhome)).BeginInit();
@@ -79,9 +80,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.small_logo)).BeginInit();
             this.leftMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_logout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_detaills)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_logout)).BeginInit();
             this.SuspendLayout();
             // 
             // panelhome
@@ -125,20 +125,6 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(564, 597);
             this.bunifuGradientPanel1.TabIndex = 10;
             // 
-            // btnBIG_cv
-            // 
-            this.btnBIG_cv.BackColor = System.Drawing.Color.Transparent;
-            this.btnBIG_cv.Image = ((System.Drawing.Image)(resources.GetObject("btnBIG_cv.Image")));
-            this.btnBIG_cv.ImageActive = null;
-            this.btnBIG_cv.Location = new System.Drawing.Point(326, 379);
-            this.btnBIG_cv.Name = "btnBIG_cv";
-            this.btnBIG_cv.Size = new System.Drawing.Size(160, 123);
-            this.btnBIG_cv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnBIG_cv.TabIndex = 17;
-            this.btnBIG_cv.TabStop = false;
-            this.btnBIG_cv.Zoom = 10;
-            this.btnBIG_cv.Click += new System.EventHandler(this.btnBIG_cv_Click_1);
-            // 
             // btnBIG_Abs
             // 
             this.btnBIG_Abs.BackColor = System.Drawing.Color.Transparent;
@@ -155,20 +141,6 @@
             this.btnBIG_Abs.Zoom = 10;
             this.btnBIG_Abs.Click += new System.EventHandler(this.btnBIG_Abs_Click_1);
             // 
-            // btnBIG_info
-            // 
-            this.btnBIG_info.BackColor = System.Drawing.Color.Transparent;
-            this.btnBIG_info.Image = ((System.Drawing.Image)(resources.GetObject("btnBIG_info.Image")));
-            this.btnBIG_info.ImageActive = null;
-            this.btnBIG_info.Location = new System.Drawing.Point(83, 379);
-            this.btnBIG_info.Name = "btnBIG_info";
-            this.btnBIG_info.Size = new System.Drawing.Size(143, 123);
-            this.btnBIG_info.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnBIG_info.TabIndex = 16;
-            this.btnBIG_info.TabStop = false;
-            this.btnBIG_info.Zoom = 10;
-            this.btnBIG_info.Click += new System.EventHandler(this.btnBIG_info_Click_1);
-            // 
             // btnBIG_detaills
             // 
             this.btnBIG_detaills.BackColor = System.Drawing.Color.Transparent;
@@ -184,6 +156,34 @@
             this.btnBIG_detaills.Tag = "Absence";
             this.btnBIG_detaills.Zoom = 10;
             this.btnBIG_detaills.Click += new System.EventHandler(this.btnBIG_detaills_Click);
+            // 
+            // btnBIG_info
+            // 
+            this.btnBIG_info.BackColor = System.Drawing.Color.Transparent;
+            this.btnBIG_info.Image = ((System.Drawing.Image)(resources.GetObject("btnBIG_info.Image")));
+            this.btnBIG_info.ImageActive = null;
+            this.btnBIG_info.Location = new System.Drawing.Point(83, 379);
+            this.btnBIG_info.Name = "btnBIG_info";
+            this.btnBIG_info.Size = new System.Drawing.Size(143, 123);
+            this.btnBIG_info.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnBIG_info.TabIndex = 16;
+            this.btnBIG_info.TabStop = false;
+            this.btnBIG_info.Zoom = 10;
+            this.btnBIG_info.Click += new System.EventHandler(this.btnBIG_info_Click_1);
+            // 
+            // btnBIG_cv
+            // 
+            this.btnBIG_cv.BackColor = System.Drawing.Color.Transparent;
+            this.btnBIG_cv.Image = ((System.Drawing.Image)(resources.GetObject("btnBIG_cv.Image")));
+            this.btnBIG_cv.ImageActive = null;
+            this.btnBIG_cv.Location = new System.Drawing.Point(326, 379);
+            this.btnBIG_cv.Name = "btnBIG_cv";
+            this.btnBIG_cv.Size = new System.Drawing.Size(160, 123);
+            this.btnBIG_cv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnBIG_cv.TabIndex = 17;
+            this.btnBIG_cv.TabStop = false;
+            this.btnBIG_cv.Zoom = 10;
+            this.btnBIG_cv.Click += new System.EventHandler(this.btnBIG_cv_Click_1);
             // 
             // label2
             // 
@@ -245,11 +245,22 @@
             this.label5.TabIndex = 23;
             this.label5.Text = "Accueil ";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(17, 395);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(377, 87);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // raziLogo
             // 
             this.raziLogo.BackColor = System.Drawing.Color.Transparent;
             this.raziLogo.Image = ((System.Drawing.Image)(resources.GetObject("raziLogo.Image")));
-            this.raziLogo.Location = new System.Drawing.Point(0, 0);
+            this.raziLogo.Location = new System.Drawing.Point(32, 12);
             this.raziLogo.Name = "raziLogo";
             this.raziLogo.Size = new System.Drawing.Size(338, 124);
             this.raziLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -260,7 +271,7 @@
             // 
             this.AppLogo.BackColor = System.Drawing.Color.Transparent;
             this.AppLogo.Image = ((System.Drawing.Image)(resources.GetObject("AppLogo.Image")));
-            this.AppLogo.Location = new System.Drawing.Point(-17, 127);
+            this.AppLogo.Location = new System.Drawing.Point(-17, 146);
             this.AppLogo.Margin = new System.Windows.Forms.Padding(0);
             this.AppLogo.Name = "AppLogo";
             this.AppLogo.Size = new System.Drawing.Size(436, 341);
@@ -447,20 +458,6 @@
             this.leftMenu.Size = new System.Drawing.Size(77, 600);
             this.leftMenu.TabIndex = 0;
             // 
-            // btn_logout
-            // 
-            this.btn_logout.BackColor = System.Drawing.Color.Transparent;
-            this.btn_logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_logout.Image")));
-            this.btn_logout.ImageActive = null;
-            this.btn_logout.Location = new System.Drawing.Point(17, 528);
-            this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(47, 45);
-            this.btn_logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_logout.TabIndex = 8;
-            this.btn_logout.TabStop = false;
-            this.btn_logout.Zoom = 10;
-            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
-            // 
             // btn_detaills
             // 
             this.btn_detaills.BackColor = System.Drawing.Color.Transparent;
@@ -474,6 +471,20 @@
             this.btn_detaills.TabStop = false;
             this.btn_detaills.Zoom = 10;
             this.btn_detaills.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
+            // btn_logout
+            // 
+            this.btn_logout.BackColor = System.Drawing.Color.Transparent;
+            this.btn_logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_logout.Image")));
+            this.btn_logout.ImageActive = null;
+            this.btn_logout.Location = new System.Drawing.Point(17, 528);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(47, 45);
+            this.btn_logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_logout.TabIndex = 8;
+            this.btn_logout.TabStop = false;
+            this.btn_logout.Zoom = 10;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // timer1
             // 
@@ -491,17 +502,6 @@
             this.gunaAnimateWindow1.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_CENTER;
             this.gunaAnimateWindow1.Interval = 600;
             this.gunaAnimateWindow1.TargetControl = this;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(17, 376);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(377, 87);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
             // 
             // formHome
             // 
@@ -521,10 +521,11 @@
             this.panelhome.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBIG_cv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBIG_Abs)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBIG_info)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBIG_detaills)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBIG_info)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBIG_cv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.raziLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AppLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnhome)).EndInit();
@@ -537,9 +538,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.small_logo)).EndInit();
             this.leftMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_logout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_detaills)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_logout)).EndInit();
             this.ResumeLayout(false);
 
         }
