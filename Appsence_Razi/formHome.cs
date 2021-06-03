@@ -136,5 +136,11 @@ namespace Appsence_Razi
             formRecrut f = new formRecrut();
             chargerform(f);
         }
+
+        private void btn_admin_Click(object sender, EventArgs e)
+        {
+            form_admin f = new form_admin();
+            chargerform(f);
+        }
     }
 }

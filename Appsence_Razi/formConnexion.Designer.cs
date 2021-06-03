@@ -46,6 +46,7 @@
             this.gunaAnimateWindow1 = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.gunaAnimateWindow2 = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.lbl_error = new System.Windows.Forms.Label();
             this.panelforms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,6 +61,7 @@
             // 
             this.panelforms.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelforms.BackgroundImage")));
             this.panelforms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelforms.Controls.Add(this.lbl_error);
             this.panelforms.Controls.Add(this.pictureBox1);
             this.panelforms.Controls.Add(this.pictureBox2);
             this.panelforms.Controls.Add(this.topBar);
@@ -247,6 +249,7 @@
             this.txt_login.Size = new System.Drawing.Size(293, 34);
             this.txt_login.TabIndex = 58;
             this.txt_login.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_login.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_login_KeyPress);
             this.txt_login.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_login_KeyUp);
             // 
             // txt_password
@@ -272,6 +275,7 @@
             this.txt_password.Size = new System.Drawing.Size(293, 34);
             this.txt_password.TabIndex = 64;
             this.txt_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_password.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_password_KeyPress);
             this.txt_password.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_password_KeyUp);
             // 
             // gunaAnimateWindow1
@@ -293,6 +297,17 @@
             this.bunifuDragControl1.TargetControl = this.topBar;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // lbl_error
+            // 
+            this.lbl_error.AutoSize = true;
+            this.lbl_error.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_error.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_error.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(50)))));
+            this.lbl_error.Location = new System.Drawing.Point(88, 217);
+            this.lbl_error.Name = "lbl_error";
+            this.lbl_error.Size = new System.Drawing.Size(0, 24);
+            this.lbl_error.TabIndex = 72;
+            // 
             // formConnexion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,6 +321,7 @@
             this.Text = "formConnexion";
             this.Load += new System.EventHandler(this.formConnexion_Load);
             this.panelforms.ResumeLayout(false);
+            this.panelforms.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.topBar.ResumeLayout(false);
@@ -336,5 +352,6 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lbl_error;
     }
 }

@@ -51,14 +51,18 @@ namespace Appsence_Razi
             comd_login.Parameters.Add(new SqlParameter("@pswd", txt_password.Text));
 
             SqlDataReader dr = comd_login.ExecuteReader();
-            while (dr.Read())
+            if (dr.Read())
             {
                 
                 this.Hide();
                 formHome f = new formHome();
                 f.ShowDialog();
             }
-
+            else
+            {
+                lbl_error.Text = "login ou mot de passe incorrecte...!";
+                lbl_error.ForeColor = Color.Red;
+            }
             cn.Close();
 
         }
@@ -73,6 +77,16 @@ namespace Appsence_Razi
         {
             if (e.KeyValue == 13)
                 btn_connect.PerformClick();
+        }
+
+        private void txt_login_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            lbl_error.Text = "";
+        }
+
+        private void txt_password_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            lbl_error.Text = "";
         }
     }
 }
