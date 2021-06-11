@@ -118,6 +118,7 @@ namespace Appsence_Razi
             if (MessageBox.Show("voulez vous supprimer cette personne...! ", "supprission", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 bsrecrut.RemoveCurrent();
+                darecrut.Update(ds, "RECRUTEMENT");
             }
         }
 

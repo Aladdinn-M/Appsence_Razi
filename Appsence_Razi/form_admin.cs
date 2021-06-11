@@ -22,7 +22,7 @@ namespace Appsence_Razi
         SqlCommand comduser;
         SqlDataAdapter da_user;
         BindingSource bs_user = new BindingSource();
-        SqlCommandBuilder cmd_builder = new SqlCommandBuilder();
+        SqlCommandBuilder cmd_builder ;
 
 
         public form_admin()
@@ -59,7 +59,7 @@ namespace Appsence_Razi
             list_users.DataSource = bs_user;
             list_users.DisplayMember = "username";
             list_users.ValueMember = "id";
-
+            cmd_builder = new SqlCommandBuilder(da_user);
             txt_login.DataBindings.Add("text", bs_user, "username",true);
             txt_password.DataBindings.Add("text", bs_user, "mot de passe",true);
             txt_type.DataBindings.Add("text", bs_user, "type_user",true);
@@ -113,5 +113,27 @@ namespace Appsence_Razi
                 activatmod(false);
             }
         }
+
+        private void move_first_Click(object sender, EventArgs e)
+        {
+            bs_user.MoveFirst();
+        }
+
+        private void move_perview_Click(object sender, EventArgs e)
+        {
+            bs_user.MoveLast();
+        }
+
+        private void move_next_Click(object sender, EventArgs e)
+        {
+            bs_user.MoveNext();
+        }
+
+        private void move_last_Click(object sender, EventArgs e)
+        {
+            bs_user.MoveLast();
+        }
+
+
     }
 }

@@ -119,7 +119,25 @@ namespace Appsence_Razi
             dr.Close();
             dr = null;
         }
-
+        public void uncheckedAll()
+        {
+            j1.Checked = false; j2.Checked = false;
+            j3.Checked = false; j4.Checked = false;
+            j5.Checked = false; j6.Checked = false;
+            j7.Checked = false; j8.Checked = false;
+            j9.Checked = false; j10.Checked = false;
+            j11.Checked = false; j12.Checked = false;
+            j13.Checked = false; j14.Checked = false;
+            j15.Checked = false; j16.Checked = false;
+            j17.Checked = false; j18.Checked = false;
+            j19.Checked = false; j20.Checked = false;
+            j21.Checked = false; j22.Checked = false;
+            j23.Checked = false; j24.Checked = false;
+            j25.Checked = false; j26.Checked = false;
+            j27.Checked = false; j28.Checked = false;
+            j29.Checked = false; j30.Checked = false;
+            j31.Checked = false;
+        }
 
         public formAbsence()
         {
@@ -1402,43 +1420,19 @@ namespace Appsence_Razi
         {
             Ddw_type.SelectedIndex = -1;
             a1.Text = "";
-            j1.Checked = false;             j2.Checked = false;
-            j3.Checked = false;             j4.Checked = false;
-            j5.Checked = false;             j6.Checked = false;
-            j7.Checked = false;             j8.Checked = false;
-            j9.Checked = false;             j10.Checked = false;
-            j11.Checked = false;            j12.Checked = false;
-            j13.Checked = false;            j14.Checked = false;
-            j15.Checked = false;            j16.Checked = false;
-            j17.Checked = false;            j18.Checked = false;
-            j19.Checked = false;            j20.Checked = false;
-            j21.Checked = false;            j22.Checked = false;
-            j23.Checked = false;            j24.Checked = false;
-            j25.Checked = false;            j26.Checked = false;
-            j27.Checked = false;            j28.Checked = false;
-            j29.Checked = false;            j30.Checked = false;
-            j31.Checked = false;
+            uncheckedAll();
         }
 
         private void ddw_months_SelectedValueChanged(object sender, EventArgs e)
         {
             a1.Text = "";
-            j1.Checked = false; j2.Checked = false;
-            j3.Checked = false; j4.Checked = false;
-            j5.Checked = false; j6.Checked = false;
-            j7.Checked = false; j8.Checked = false;
-            j9.Checked = false; j10.Checked = false;
-            j11.Checked = false; j12.Checked = false;
-            j13.Checked = false; j14.Checked = false;
-            j15.Checked = false; j16.Checked = false;
-            j17.Checked = false; j18.Checked = false;
-            j19.Checked = false; j20.Checked = false;
-            j21.Checked = false; j22.Checked = false;
-            j23.Checked = false; j24.Checked = false;
-            j25.Checked = false; j26.Checked = false;
-            j27.Checked = false; j28.Checked = false;
-            j29.Checked = false; j30.Checked = false;
-            j31.Checked = false;
+            uncheckedAll();
+          
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

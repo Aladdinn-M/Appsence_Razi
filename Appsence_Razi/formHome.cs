@@ -139,8 +139,16 @@ namespace Appsence_Razi
 
         private void btn_admin_Click(object sender, EventArgs e)
         {
-            form_admin f = new form_admin();
-            chargerform(f);
+            if (Program.activeUser == "admin")
+            {
+                form_admin f = new form_admin();
+                chargerform(f);
+            }
+            else
+            {
+                MessageBox.Show("Désolé, vous n’êtes pas autorisé à accéder à cette page !!");
+                
+            }
         }
     }
 }

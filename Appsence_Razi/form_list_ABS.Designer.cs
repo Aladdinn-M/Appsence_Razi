@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_list_ABS));
             this.panelforms = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btn_print = new Bunifu.UI.WinForms.BunifuImageButton();
             this.txt_NBabs = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_commmentaire = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -55,6 +56,7 @@
             // 
             this.panelforms.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelforms.BackgroundImage")));
             this.panelforms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelforms.Controls.Add(this.btn_print);
             this.panelforms.Controls.Add(this.txt_NBabs);
             this.panelforms.Controls.Add(this.label8);
             this.panelforms.Controls.Add(this.txt_commmentaire);
@@ -84,13 +86,44 @@
             this.panelforms.Size = new System.Drawing.Size(974, 600);
             this.panelforms.TabIndex = 11;
             // 
+            // btn_print
+            // 
+            this.btn_print.ActiveImage = null;
+            this.btn_print.AllowAnimations = true;
+            this.btn_print.AllowBuffering = false;
+            this.btn_print.AllowZooming = true;
+            this.btn_print.BackColor = System.Drawing.Color.Transparent;
+            this.btn_print.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btn_print.ErrorImage")));
+            this.btn_print.FadeWhenInactive = false;
+            this.btn_print.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.btn_print.Image = ((System.Drawing.Image)(resources.GetObject("btn_print.Image")));
+            this.btn_print.ImageActive = null;
+            this.btn_print.ImageLocation = null;
+            this.btn_print.ImageMargin = 10;
+            this.btn_print.ImageSize = new System.Drawing.Size(61, 57);
+            this.btn_print.ImageZoomSize = new System.Drawing.Size(71, 67);
+            this.btn_print.InitialImage = ((System.Drawing.Image)(resources.GetObject("btn_print.InitialImage")));
+            this.btn_print.Location = new System.Drawing.Point(838, 318);
+            this.btn_print.Name = "btn_print";
+            this.btn_print.Rotation = 0;
+            this.btn_print.ShowActiveImage = true;
+            this.btn_print.ShowCursorChanges = true;
+            this.btn_print.ShowImageBorders = false;
+            this.btn_print.ShowSizeMarkers = false;
+            this.btn_print.Size = new System.Drawing.Size(71, 67);
+            this.btn_print.TabIndex = 68;
+            this.btn_print.ToolTipText = "";
+            this.btn_print.WaitOnLoad = false;
+            this.btn_print.Zoom = 10;
+            this.btn_print.ZoomSpeed = 10;
+            // 
             // txt_NBabs
             // 
             this.txt_NBabs.AutoSize = true;
             this.txt_NBabs.BackColor = System.Drawing.Color.Transparent;
             this.txt_NBabs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_NBabs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txt_NBabs.Location = new System.Drawing.Point(677, 104);
+            this.txt_NBabs.Location = new System.Drawing.Point(646, 100);
             this.txt_NBabs.Name = "txt_NBabs";
             this.txt_NBabs.Size = new System.Drawing.Size(0, 24);
             this.txt_NBabs.TabIndex = 67;
@@ -101,7 +134,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label8.Location = new System.Drawing.Point(457, 104);
+            this.label8.Location = new System.Drawing.Point(426, 100);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(202, 24);
             this.label8.TabIndex = 65;
@@ -124,11 +157,11 @@
             this.txt_commmentaire.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
             this.txt_commmentaire.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_commmentaire.LineThickness = 3;
-            this.txt_commmentaire.Location = new System.Drawing.Point(592, 462);
+            this.txt_commmentaire.Location = new System.Drawing.Point(561, 468);
             this.txt_commmentaire.Margin = new System.Windows.Forms.Padding(6);
             this.txt_commmentaire.MaxLength = 32767;
             this.txt_commmentaire.Name = "txt_commmentaire";
-            this.txt_commmentaire.Size = new System.Drawing.Size(293, 34);
+            this.txt_commmentaire.Size = new System.Drawing.Size(205, 34);
             this.txt_commmentaire.TabIndex = 64;
             this.txt_commmentaire.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -138,7 +171,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label4.Location = new System.Drawing.Point(451, 473);
+            this.label4.Location = new System.Drawing.Point(420, 479);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(124, 18);
             this.label4.TabIndex = 63;
@@ -150,7 +183,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label7.Location = new System.Drawing.Point(457, 138);
+            this.label7.Location = new System.Drawing.Point(426, 144);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(138, 18);
             this.label7.TabIndex = 62;
@@ -173,7 +206,7 @@
             this.txt_matricule.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
             this.txt_matricule.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_matricule.LineThickness = 3;
-            this.txt_matricule.Location = new System.Drawing.Point(167, 511);
+            this.txt_matricule.Location = new System.Drawing.Point(136, 517);
             this.txt_matricule.Margin = new System.Windows.Forms.Padding(6);
             this.txt_matricule.MaxLength = 32767;
             this.txt_matricule.Name = "txt_matricule";
@@ -198,11 +231,11 @@
             this.txt_type_abs.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
             this.txt_type_abs.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_type_abs.LineThickness = 3;
-            this.txt_type_abs.Location = new System.Drawing.Point(592, 413);
+            this.txt_type_abs.Location = new System.Drawing.Point(561, 419);
             this.txt_type_abs.Margin = new System.Windows.Forms.Padding(6);
             this.txt_type_abs.MaxLength = 32767;
             this.txt_type_abs.Name = "txt_type_abs";
-            this.txt_type_abs.Size = new System.Drawing.Size(293, 34);
+            this.txt_type_abs.Size = new System.Drawing.Size(205, 34);
             this.txt_type_abs.TabIndex = 58;
             this.txt_type_abs.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -223,7 +256,7 @@
             this.txt_cin.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
             this.txt_cin.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_cin.LineThickness = 3;
-            this.txt_cin.Location = new System.Drawing.Point(167, 413);
+            this.txt_cin.Location = new System.Drawing.Point(136, 419);
             this.txt_cin.Margin = new System.Windows.Forms.Padding(6);
             this.txt_cin.MaxLength = 32767;
             this.txt_cin.Name = "txt_cin";
@@ -248,7 +281,7 @@
             this.txt_cnss.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
             this.txt_cnss.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_cnss.LineThickness = 3;
-            this.txt_cnss.Location = new System.Drawing.Point(167, 462);
+            this.txt_cnss.Location = new System.Drawing.Point(136, 468);
             this.txt_cnss.Margin = new System.Windows.Forms.Padding(6);
             this.txt_cnss.MaxLength = 32767;
             this.txt_cnss.Name = "txt_cnss";
@@ -262,7 +295,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label6.Location = new System.Drawing.Point(68, 469);
+            this.label6.Location = new System.Drawing.Point(37, 475);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 18);
             this.label6.TabIndex = 56;
@@ -274,7 +307,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label5.Location = new System.Drawing.Point(68, 420);
+            this.label5.Location = new System.Drawing.Point(37, 426);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 18);
             this.label5.TabIndex = 55;
@@ -286,7 +319,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label3.Location = new System.Drawing.Point(448, 421);
+            this.label3.Location = new System.Drawing.Point(417, 427);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 18);
             this.label3.TabIndex = 53;
@@ -298,7 +331,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label2.Location = new System.Drawing.Point(68, 518);
+            this.label2.Location = new System.Drawing.Point(37, 524);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 18);
             this.label2.TabIndex = 52;
@@ -329,9 +362,9 @@
             this.ddw_months.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
             this.ddw_months.ItemHeight = 26;
             this.ddw_months.ItemHighLightColor = System.Drawing.Color.LightBlue;
-            this.ddw_months.Location = new System.Drawing.Point(454, 155);
+            this.ddw_months.Location = new System.Drawing.Point(423, 161);
             this.ddw_months.Name = "ddw_months";
-            this.ddw_months.Size = new System.Drawing.Size(431, 32);
+            this.ddw_months.Size = new System.Drawing.Size(343, 32);
             this.ddw_months.TabIndex = 9;
             this.ddw_months.Text = null;
             this.ddw_months.SelectedValueChanged += new System.EventHandler(this.ddw_months_SelectedValueChanged);
@@ -342,12 +375,13 @@
             this.list_date.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.list_date.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F);
             this.list_date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.list_date.FormatString = "D";
+            this.list_date.FormatString = "d";
             this.list_date.FormattingEnabled = true;
             this.list_date.ItemHeight = 24;
-            this.list_date.Location = new System.Drawing.Point(454, 187);
+            this.list_date.Location = new System.Drawing.Point(423, 193);
             this.list_date.Name = "list_date";
-            this.list_date.Size = new System.Drawing.Size(431, 192);
+            this.list_date.Size = new System.Drawing.Size(343, 192);
+            this.list_date.Sorted = true;
             this.list_date.TabIndex = 8;
             this.list_date.SelectedValueChanged += new System.EventHandler(this.list_date_SelectedValueChanged);
             // 
@@ -376,7 +410,7 @@
             this.Ddw_fonction.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
             this.Ddw_fonction.ItemHeight = 26;
             this.Ddw_fonction.ItemHighLightColor = System.Drawing.Color.LightBlue;
-            this.Ddw_fonction.Location = new System.Drawing.Point(71, 90);
+            this.Ddw_fonction.Location = new System.Drawing.Point(40, 96);
             this.Ddw_fonction.Name = "Ddw_fonction";
             this.Ddw_fonction.Size = new System.Drawing.Size(322, 32);
             this.Ddw_fonction.TabIndex = 6;
@@ -390,7 +424,7 @@
             this.list_personnel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F);
             this.list_personnel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
             this.list_personnel.ItemHeight = 24;
-            this.list_personnel.Location = new System.Drawing.Point(71, 138);
+            this.list_personnel.Location = new System.Drawing.Point(40, 144);
             this.list_personnel.Name = "list_personnel";
             this.list_personnel.Size = new System.Drawing.Size(322, 240);
             this.list_personnel.TabIndex = 7;
@@ -445,5 +479,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label txt_NBabs;
         private System.Windows.Forms.ListBox list_date;
+        private Bunifu.UI.WinForms.BunifuImageButton btn_print;
     }
 }

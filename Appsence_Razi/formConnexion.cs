@@ -15,6 +15,7 @@ namespace Appsence_Razi
 {
     public partial class formConnexion : Form
     {
+        
         string cs = ConfigurationManager.ConnectionStrings["Appsence_razi"].ConnectionString;
         SqlConnection cn = new SqlConnection();
         SqlCommand comd_login;
@@ -53,7 +54,7 @@ namespace Appsence_Razi
             SqlDataReader dr = comd_login.ExecuteReader();
             if (dr.Read())
             {
-                
+                Program.activeUser = dr[3].ToString();
                 this.Hide();
                 formHome f = new formHome();
                 f.ShowDialog();
@@ -88,5 +89,7 @@ namespace Appsence_Razi
         {
             lbl_error.Text = "";
         }
+
+        
     }
 }

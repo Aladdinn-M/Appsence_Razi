@@ -217,7 +217,7 @@
             stateProperties2.IconRightImage = null;
             this.move_first.OnPressedState = stateProperties2;
             this.move_first.Size = new System.Drawing.Size(55, 45);
-            this.move_first.TabIndex = 68;
+            this.move_first.TabIndex = 1;
             this.move_first.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.move_first.TextMarginLeft = 0;
             this.move_first.UseDefaultRadiusAndThickness = true;
@@ -281,7 +281,7 @@
             stateProperties4.IconRightImage = null;
             this.move_perview.OnPressedState = stateProperties4;
             this.move_perview.Size = new System.Drawing.Size(55, 45);
-            this.move_perview.TabIndex = 71;
+            this.move_perview.TabIndex = 2;
             this.move_perview.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.move_perview.TextMarginLeft = 0;
             this.move_perview.UseDefaultRadiusAndThickness = true;
@@ -345,7 +345,7 @@
             stateProperties6.IconRightImage = null;
             this.move_next.OnPressedState = stateProperties6;
             this.move_next.Size = new System.Drawing.Size(55, 45);
-            this.move_next.TabIndex = 70;
+            this.move_next.TabIndex = 3;
             this.move_next.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.move_next.TextMarginLeft = 0;
             this.move_next.UseDefaultRadiusAndThickness = true;
@@ -409,7 +409,7 @@
             stateProperties8.IconRightImage = null;
             this.move_last.OnPressedState = stateProperties8;
             this.move_last.Size = new System.Drawing.Size(55, 45);
-            this.move_last.TabIndex = 69;
+            this.move_last.TabIndex = 4;
             this.move_last.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.move_last.TextMarginLeft = 0;
             this.move_last.UseDefaultRadiusAndThickness = true;
@@ -428,8 +428,9 @@
             this.DP_dateRecrut.Name = "DP_dateRecrut";
             this.DP_dateRecrut.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.DP_dateRecrut.Size = new System.Drawing.Size(281, 39);
-            this.DP_dateRecrut.TabIndex = 66;
+            this.DP_dateRecrut.TabIndex = 5;
             this.DP_dateRecrut.Value = new System.DateTime(2021, 5, 12, 23, 5, 42, 0);
+            this.DP_dateRecrut.onValueChanged += new System.EventHandler(this.DP_dateRecrut_onValueChanged);
             // 
             // txt_matricule
             // 
@@ -440,7 +441,7 @@
             this.txt_matricule.Location = new System.Drawing.Point(547, 132);
             this.txt_matricule.Name = "txt_matricule";
             this.txt_matricule.Size = new System.Drawing.Size(266, 22);
-            this.txt_matricule.TabIndex = 65;
+            this.txt_matricule.TabIndex = 6;
             // 
             // txt_nom
             // 
@@ -451,7 +452,7 @@
             this.txt_nom.Location = new System.Drawing.Point(547, 181);
             this.txt_nom.Name = "txt_nom";
             this.txt_nom.Size = new System.Drawing.Size(266, 22);
-            this.txt_nom.TabIndex = 64;
+            this.txt_nom.TabIndex = 7;
             // 
             // txt_prenom
             // 
@@ -462,7 +463,7 @@
             this.txt_prenom.Location = new System.Drawing.Point(547, 229);
             this.txt_prenom.Name = "txt_prenom";
             this.txt_prenom.Size = new System.Drawing.Size(266, 22);
-            this.txt_prenom.TabIndex = 59;
+            this.txt_prenom.TabIndex = 8;
             // 
             // txt_cin
             // 
@@ -471,10 +472,10 @@
             this.txt_cin.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txt_cin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.txt_cin.Location = new System.Drawing.Point(547, 280);
+            this.txt_cin.Location = new System.Drawing.Point(547, 277);
             this.txt_cin.Name = "txt_cin";
             this.txt_cin.Size = new System.Drawing.Size(266, 22);
-            this.txt_cin.TabIndex = 60;
+            this.txt_cin.TabIndex = 10;
             // 
             // txt_cnss
             // 
@@ -485,7 +486,7 @@
             this.txt_cnss.Location = new System.Drawing.Point(547, 324);
             this.txt_cnss.Name = "txt_cnss";
             this.txt_cnss.Size = new System.Drawing.Size(266, 22);
-            this.txt_cnss.TabIndex = 61;
+            this.txt_cnss.TabIndex = 11;
             // 
             // DP_dateNaiss
             // 
@@ -499,7 +500,7 @@
             this.DP_dateNaiss.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.DP_dateNaiss.Name = "DP_dateNaiss";
             this.DP_dateNaiss.Size = new System.Drawing.Size(281, 40);
-            this.DP_dateNaiss.TabIndex = 67;
+            this.DP_dateNaiss.TabIndex = 12;
             this.DP_dateNaiss.Value = new System.DateTime(2021, 5, 12, 22, 37, 38, 204);
             // 
             // txt_enfants
@@ -511,7 +512,7 @@
             this.txt_enfants.Location = new System.Drawing.Point(547, 424);
             this.txt_enfants.Name = "txt_enfants";
             this.txt_enfants.Size = new System.Drawing.Size(266, 22);
-            this.txt_enfants.TabIndex = 62;
+            this.txt_enfants.TabIndex = 13;
             // 
             // txt_sexe
             // 
@@ -522,7 +523,7 @@
             this.txt_sexe.Location = new System.Drawing.Point(547, 474);
             this.txt_sexe.Name = "txt_sexe";
             this.txt_sexe.Size = new System.Drawing.Size(266, 22);
-            this.txt_sexe.TabIndex = 63;
+            this.txt_sexe.TabIndex = 14;
             // 
             // btn_add
             // 
@@ -549,7 +550,7 @@
             this.btn_add.ShowImageBorders = false;
             this.btn_add.ShowSizeMarkers = false;
             this.btn_add.Size = new System.Drawing.Size(71, 67);
-            this.btn_add.TabIndex = 43;
+            this.btn_add.TabIndex = 17;
             this.btn_add.ToolTipText = "";
             this.btn_add.WaitOnLoad = false;
             this.btn_add.Zoom = 10;
@@ -581,7 +582,7 @@
             this.btn_edit.ShowImageBorders = false;
             this.btn_edit.ShowSizeMarkers = false;
             this.btn_edit.Size = new System.Drawing.Size(71, 67);
-            this.btn_edit.TabIndex = 44;
+            this.btn_edit.TabIndex = 18;
             this.btn_edit.ToolTipText = "";
             this.btn_edit.WaitOnLoad = false;
             this.btn_edit.Zoom = 10;
@@ -613,7 +614,7 @@
             this.btn_delete.ShowImageBorders = false;
             this.btn_delete.ShowSizeMarkers = false;
             this.btn_delete.Size = new System.Drawing.Size(71, 67);
-            this.btn_delete.TabIndex = 45;
+            this.btn_delete.TabIndex = 19;
             this.btn_delete.ToolTipText = "";
             this.btn_delete.WaitOnLoad = false;
             this.btn_delete.Zoom = 10;
@@ -645,7 +646,7 @@
             this.btn_print.ShowImageBorders = false;
             this.btn_print.ShowSizeMarkers = false;
             this.btn_print.Size = new System.Drawing.Size(71, 67);
-            this.btn_print.TabIndex = 46;
+            this.btn_print.TabIndex = 20;
             this.btn_print.ToolTipText = "";
             this.btn_print.WaitOnLoad = false;
             this.btn_print.Zoom = 10;
@@ -897,7 +898,7 @@
             stateProperties10.IconRightImage = null;
             this.btn_cancel.OnPressedState = stateProperties10;
             this.btn_cancel.Size = new System.Drawing.Size(180, 45);
-            this.btn_cancel.TabIndex = 28;
+            this.btn_cancel.TabIndex = 16;
             this.btn_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_cancel.TextMarginLeft = 0;
             this.btn_cancel.UseDefaultRadiusAndThickness = true;
@@ -961,7 +962,7 @@
             stateProperties12.IconRightImage = null;
             this.btn_validate.OnPressedState = stateProperties12;
             this.btn_validate.Size = new System.Drawing.Size(180, 45);
-            this.btn_validate.TabIndex = 27;
+            this.btn_validate.TabIndex = 15;
             this.btn_validate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_validate.TextMarginLeft = 0;
             this.btn_validate.UseDefaultRadiusAndThickness = true;

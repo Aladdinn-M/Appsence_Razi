@@ -189,6 +189,8 @@ namespace Appsence_Razi
                 PICBOX.Load(@"pics\shadow-profile.jpg");
                 File.Delete(@"pics\" + txt_pic.Text);
                 bspersonnel.RemoveCurrent();
+                bspersonnel.EndEdit();
+                daPersonnel.Update(ds, "PERSONNEL");
             }
                       
         }
@@ -245,6 +247,11 @@ namespace Appsence_Razi
              report_all r = new report_all();
             form_printing f = new form_printing(r, ds);
             f.ShowDialog();
+        }
+
+        private void DP_dateRecrut_onValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

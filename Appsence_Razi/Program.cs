@@ -8,6 +8,7 @@ namespace Appsence_Razi
 {
     static class Program
     {
+        public static string activeUser = "";
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>

@@ -31,6 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formConnexion));
             this.panelforms = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.txt_login = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_password = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.btn_connect = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.lbl_error = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.topBar = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -40,13 +44,9 @@
             this.small_logo = new System.Windows.Forms.PictureBox();
             this.title = new System.Windows.Forms.Label();
             this.raziLogo = new System.Windows.Forms.PictureBox();
-            this.btn_connect = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.txt_login = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txt_password = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.gunaAnimateWindow1 = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.gunaAnimateWindow2 = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.lbl_error = new System.Windows.Forms.Label();
             this.panelforms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -61,14 +61,14 @@
             // 
             this.panelforms.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelforms.BackgroundImage")));
             this.panelforms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelforms.Controls.Add(this.txt_login);
+            this.panelforms.Controls.Add(this.txt_password);
+            this.panelforms.Controls.Add(this.btn_connect);
             this.panelforms.Controls.Add(this.lbl_error);
             this.panelforms.Controls.Add(this.pictureBox1);
             this.panelforms.Controls.Add(this.pictureBox2);
             this.panelforms.Controls.Add(this.topBar);
             this.panelforms.Controls.Add(this.raziLogo);
-            this.panelforms.Controls.Add(this.btn_connect);
-            this.panelforms.Controls.Add(this.txt_login);
-            this.panelforms.Controls.Add(this.txt_password);
             this.panelforms.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelforms.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
             this.panelforms.GradientBottomRight = System.Drawing.Color.White;
@@ -79,6 +79,101 @@
             this.panelforms.Quality = 10;
             this.panelforms.Size = new System.Drawing.Size(539, 392);
             this.panelforms.TabIndex = 12;
+            // 
+            // txt_login
+            // 
+            this.txt_login.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txt_login.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txt_login.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_login.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_login.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_login.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.txt_login.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.txt_login.HintText = "LOGIN";
+            this.txt_login.isPassword = false;
+            this.txt_login.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.txt_login.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.txt_login.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_login.LineThickness = 3;
+            this.txt_login.Location = new System.Drawing.Point(65, 258);
+            this.txt_login.Margin = new System.Windows.Forms.Padding(6);
+            this.txt_login.MaxLength = 32767;
+            this.txt_login.Name = "txt_login";
+            this.txt_login.Size = new System.Drawing.Size(293, 34);
+            this.txt_login.TabIndex = 58;
+            this.txt_login.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_login.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_login_KeyPress);
+            this.txt_login.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_login_KeyUp);
+            // 
+            // txt_password
+            // 
+            this.txt_password.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txt_password.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txt_password.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_password.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_password.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.txt_password.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.txt_password.HintText = "MOT DE PASSE";
+            this.txt_password.isPassword = true;
+            this.txt_password.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.txt_password.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.txt_password.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_password.LineThickness = 3;
+            this.txt_password.Location = new System.Drawing.Point(65, 304);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(6);
+            this.txt_password.MaxLength = 32767;
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(293, 34);
+            this.txt_password.TabIndex = 64;
+            this.txt_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_password.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_password_KeyPress);
+            this.txt_password.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_password_KeyUp);
+            // 
+            // btn_connect
+            // 
+            this.btn_connect.ActiveImage = null;
+            this.btn_connect.AllowAnimations = true;
+            this.btn_connect.AllowBuffering = true;
+            this.btn_connect.AllowZooming = true;
+            this.btn_connect.BackColor = System.Drawing.Color.Transparent;
+            this.btn_connect.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btn_connect.ErrorImage")));
+            this.btn_connect.FadeWhenInactive = false;
+            this.btn_connect.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.btn_connect.Image = ((System.Drawing.Image)(resources.GetObject("btn_connect.Image")));
+            this.btn_connect.ImageActive = null;
+            this.btn_connect.ImageLocation = null;
+            this.btn_connect.ImageMargin = 10;
+            this.btn_connect.ImageSize = new System.Drawing.Size(77, 70);
+            this.btn_connect.ImageZoomSize = new System.Drawing.Size(87, 80);
+            this.btn_connect.InitialImage = ((System.Drawing.Image)(resources.GetObject("btn_connect.InitialImage")));
+            this.btn_connect.Location = new System.Drawing.Point(377, 258);
+            this.btn_connect.Name = "btn_connect";
+            this.btn_connect.Rotation = 0;
+            this.btn_connect.ShowActiveImage = true;
+            this.btn_connect.ShowCursorChanges = true;
+            this.btn_connect.ShowImageBorders = false;
+            this.btn_connect.ShowSizeMarkers = false;
+            this.btn_connect.Size = new System.Drawing.Size(87, 80);
+            this.btn_connect.TabIndex = 65;
+            this.btn_connect.ToolTipText = "";
+            this.btn_connect.WaitOnLoad = false;
+            this.btn_connect.Zoom = 10;
+            this.btn_connect.ZoomSpeed = 10;
+            this.btn_connect.Click += new System.EventHandler(this.btn_connect_Click);
+            // 
+            // lbl_error
+            // 
+            this.lbl_error.AutoSize = true;
+            this.lbl_error.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_error.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_error.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(50)))));
+            this.lbl_error.Location = new System.Drawing.Point(88, 217);
+            this.lbl_error.Name = "lbl_error";
+            this.lbl_error.Size = new System.Drawing.Size(0, 24);
+            this.lbl_error.TabIndex = 72;
             // 
             // pictureBox1
             // 
@@ -194,90 +289,6 @@
             this.raziLogo.TabIndex = 67;
             this.raziLogo.TabStop = false;
             // 
-            // btn_connect
-            // 
-            this.btn_connect.ActiveImage = null;
-            this.btn_connect.AllowAnimations = true;
-            this.btn_connect.AllowBuffering = true;
-            this.btn_connect.AllowZooming = true;
-            this.btn_connect.BackColor = System.Drawing.Color.Transparent;
-            this.btn_connect.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btn_connect.ErrorImage")));
-            this.btn_connect.FadeWhenInactive = false;
-            this.btn_connect.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.btn_connect.Image = ((System.Drawing.Image)(resources.GetObject("btn_connect.Image")));
-            this.btn_connect.ImageActive = null;
-            this.btn_connect.ImageLocation = null;
-            this.btn_connect.ImageMargin = 10;
-            this.btn_connect.ImageSize = new System.Drawing.Size(77, 70);
-            this.btn_connect.ImageZoomSize = new System.Drawing.Size(87, 80);
-            this.btn_connect.InitialImage = ((System.Drawing.Image)(resources.GetObject("btn_connect.InitialImage")));
-            this.btn_connect.Location = new System.Drawing.Point(377, 258);
-            this.btn_connect.Name = "btn_connect";
-            this.btn_connect.Rotation = 0;
-            this.btn_connect.ShowActiveImage = true;
-            this.btn_connect.ShowCursorChanges = true;
-            this.btn_connect.ShowImageBorders = false;
-            this.btn_connect.ShowSizeMarkers = false;
-            this.btn_connect.Size = new System.Drawing.Size(87, 80);
-            this.btn_connect.TabIndex = 65;
-            this.btn_connect.ToolTipText = "";
-            this.btn_connect.WaitOnLoad = false;
-            this.btn_connect.Zoom = 10;
-            this.btn_connect.ZoomSpeed = 10;
-            this.btn_connect.Click += new System.EventHandler(this.btn_connect_Click);
-            // 
-            // txt_login
-            // 
-            this.txt_login.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txt_login.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txt_login.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_login.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_login.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_login.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.txt_login.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.txt_login.HintText = "LOGIN";
-            this.txt_login.isPassword = false;
-            this.txt_login.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.txt_login.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.txt_login.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
-            this.txt_login.LineThickness = 3;
-            this.txt_login.Location = new System.Drawing.Point(65, 258);
-            this.txt_login.Margin = new System.Windows.Forms.Padding(6);
-            this.txt_login.MaxLength = 32767;
-            this.txt_login.Name = "txt_login";
-            this.txt_login.Size = new System.Drawing.Size(293, 34);
-            this.txt_login.TabIndex = 58;
-            this.txt_login.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_login.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_login_KeyPress);
-            this.txt_login.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_login_KeyUp);
-            // 
-            // txt_password
-            // 
-            this.txt_password.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txt_password.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txt_password.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_password.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_password.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.txt_password.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.txt_password.HintText = "MOT DE PASSE";
-            this.txt_password.isPassword = false;
-            this.txt_password.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.txt_password.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.txt_password.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
-            this.txt_password.LineThickness = 3;
-            this.txt_password.Location = new System.Drawing.Point(65, 304);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(6);
-            this.txt_password.MaxLength = 32767;
-            this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(293, 34);
-            this.txt_password.TabIndex = 64;
-            this.txt_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_password.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_password_KeyPress);
-            this.txt_password.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_password_KeyUp);
-            // 
             // gunaAnimateWindow1
             // 
             this.gunaAnimateWindow1.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_HOR_POSITIVE;
@@ -296,17 +307,6 @@
             this.bunifuDragControl1.Horizontal = true;
             this.bunifuDragControl1.TargetControl = this.topBar;
             this.bunifuDragControl1.Vertical = true;
-            // 
-            // lbl_error
-            // 
-            this.lbl_error.AutoSize = true;
-            this.lbl_error.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_error.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_error.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(50)))));
-            this.lbl_error.Location = new System.Drawing.Point(88, 217);
-            this.lbl_error.Name = "lbl_error";
-            this.lbl_error.Size = new System.Drawing.Size(0, 24);
-            this.lbl_error.TabIndex = 72;
             // 
             // formConnexion
             // 

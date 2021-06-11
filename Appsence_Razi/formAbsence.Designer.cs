@@ -39,7 +39,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelforms = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.ddw_months = new System.Windows.Forms.ComboBox();
-            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.j31 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.j30 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.j29 = new Bunifu.Framework.UI.BunifuCheckbox();
@@ -138,7 +137,6 @@
             this.panelforms.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelforms.BackgroundImage")));
             this.panelforms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelforms.Controls.Add(this.ddw_months);
-            this.panelforms.Controls.Add(this.bunifuImageButton1);
             this.panelforms.Controls.Add(this.j31);
             this.panelforms.Controls.Add(this.j30);
             this.panelforms.Controls.Add(this.j29);
@@ -202,37 +200,6 @@
             this.ddw_months.Size = new System.Drawing.Size(202, 32);
             this.ddw_months.TabIndex = 63;
             this.ddw_months.SelectedValueChanged += new System.EventHandler(this.ddw_months_SelectedValueChanged);
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.ActiveImage = null;
-            this.bunifuImageButton1.AllowAnimations = true;
-            this.bunifuImageButton1.AllowBuffering = false;
-            this.bunifuImageButton1.AllowZooming = true;
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
-            this.bunifuImageButton1.FadeWhenInactive = false;
-            this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.ImageLocation = null;
-            this.bunifuImageButton1.ImageMargin = 10;
-            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(62, 66);
-            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(72, 76);
-            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(516, 482);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Rotation = 0;
-            this.bunifuImageButton1.ShowActiveImage = true;
-            this.bunifuImageButton1.ShowCursorChanges = true;
-            this.bunifuImageButton1.ShowImageBorders = true;
-            this.bunifuImageButton1.ShowSizeMarkers = false;
-            this.bunifuImageButton1.Size = new System.Drawing.Size(72, 76);
-            this.bunifuImageButton1.TabIndex = 60;
-            this.bunifuImageButton1.ToolTipText = "";
-            this.bunifuImageButton1.WaitOnLoad = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.ZoomSpeed = 10;
             // 
             // j31
             // 
@@ -1233,7 +1200,6 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn29;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn30;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn31;
-        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.ComboBox ddw_months;
     }
 }

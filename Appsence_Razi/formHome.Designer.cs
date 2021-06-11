@@ -205,11 +205,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(50)))));
-            this.label1.Location = new System.Drawing.Point(83, 281);
+            this.label1.Location = new System.Drawing.Point(101, 279);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 24);
+            this.label1.Size = new System.Drawing.Size(109, 24);
             this.label1.TabIndex = 18;
-            this.label1.Text = "L\' absences";
+            this.label1.Text = "Absences";
             // 
             // label3
             // 
@@ -217,11 +217,11 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(50)))));
-            this.label3.Location = new System.Drawing.Point(64, 528);
+            this.label3.Location = new System.Drawing.Point(84, 528);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 24);
+            this.label3.Size = new System.Drawing.Size(140, 24);
             this.label3.TabIndex = 20;
-            this.label3.Text = "Les informations";
+            this.label3.Text = "Informations";
             // 
             // label4
             // 
@@ -229,11 +229,11 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(50)))));
-            this.label4.Location = new System.Drawing.Point(290, 281);
+            this.label4.Location = new System.Drawing.Point(312, 280);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(226, 24);
+            this.label4.Size = new System.Drawing.Size(188, 24);
             this.label4.TabIndex = 22;
-            this.label4.Text = "Les details d\'absence";
+            this.label4.Text = "Details d\'absence";
             // 
             // label5
             // 

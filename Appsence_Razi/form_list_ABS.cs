@@ -12,8 +12,6 @@ using System.Configuration;
 using System.Data.SqlClient;
 
 
-
-
 namespace Appsence_Razi
 {
     public partial class form_list_ABS : Form
@@ -173,17 +171,23 @@ namespace Appsence_Razi
         
         private void list_date_SelectedValueChanged(object sender, EventArgs e)
         {
+            txt_type_abs.Text = "";
+            txt_commmentaire.Text = "";
             cn = new SqlConnection(cs);
             cn.Open();
-            string req = "select LIB_TYPE ,COMMENTAIRE from ABSANCE a inner join TYPE_ABS t on a.ID_TYPEABS=t.ID_TYPEABS where MATRICULE=" + get_Matricule(list_personnel.GetItemText(list_personnel.SelectedItem)) ;
+            string req = "select LIB_TYPE ,COMMENTAIRE from ABSANCE a inner join TYPE_ABS t on a.ID_TYPEABS=t.ID_TYPEABS where a.date_debut='"+list_date.GetItemText(list_date.SelectedItem)+"' and   MATRICULE=" + get_Matricule(list_personnel.GetItemText(list_personnel.SelectedItem)) ;
             comd_ABSdetails = new SqlCommand(req, cn);
             SqlDataReader dr = comd_ABSdetails.ExecuteReader();
+
             while (dr.Read())
             {
                 txt_type_abs.Text = dr[0].ToString();
                 txt_commmentaire.Text = dr[1].ToString();
             }
+
             cn.Close();
         }
+
+        
     }
 }
