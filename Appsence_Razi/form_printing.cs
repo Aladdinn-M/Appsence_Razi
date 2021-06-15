@@ -17,23 +17,25 @@ namespace Appsence_Razi
     {
         ReportClass report;
         DataSet dataSet;
-        public form_printing(ReportClass r,DataSet ds)
+        string filter;
+        public form_printing(ReportClass r,DataSet ds,string filter="")
         {
             InitializeComponent();
             report = r;
             dataSet = ds;
+            this.filter = filter;
+        }
+        public void charging()
+        {
+            report.SetDataSource(dataSet);
+            report.SetParameterValue("chemain",Application.StartupPath + "\\pics\\");
+            crystalReportViewer1.ReportSource = report;
+            crystalReportViewer1.SelectionFormula = filter;
         }
 
         private void form_printing_Load(object sender, EventArgs e)
         {
-            report.SetDataSource(dataSet);
-            try
-            {
-                report.SetParameterValue("chemain", Application.StartupPath + "\\pics\\");
-            }
-            catch { }
-
-            crystalReportViewer1.ReportSource = report;
+            charging();
 
 
         }

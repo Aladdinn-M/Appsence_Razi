@@ -237,8 +237,9 @@ namespace Appsence_Razi
         private void btn_print_Click(object sender, EventArgs e)
         {
             person_report r = new person_report();
-            
-            form_printing f = new form_printing(r,ds);
+            string filter = "{PERSONNEL.MATRICULE} = " + list_personnel.SelectedValue.ToString();
+            PICBOX.Load(@"pics\shadow-profile.jpg");
+            form_printing f = new form_printing(r, ds,filter);
             f.ShowDialog();
         }
 

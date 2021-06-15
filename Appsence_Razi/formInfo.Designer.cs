@@ -1189,7 +1189,7 @@
             this.list_personnel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
             this.list_personnel.FormattingEnabled = true;
             this.list_personnel.ItemHeight = 24;
-            this.list_personnel.Location = new System.Drawing.Point(30, 126);
+            this.list_personnel.Location = new System.Drawing.Point(30, 130);
             this.list_personnel.Name = "list_personnel";
             this.list_personnel.Size = new System.Drawing.Size(300, 336);
             this.list_personnel.TabIndex = 7;
@@ -1208,9 +1208,9 @@
             // 
             // txt_pic
             // 
-            this.txt_pic.Location = new System.Drawing.Point(133, 270);
+            this.txt_pic.Location = new System.Drawing.Point(133, 258);
             this.txt_pic.Name = "txt_pic";
-            this.txt_pic.Size = new System.Drawing.Size(100, 20);
+            this.txt_pic.Size = new System.Drawing.Size(70, 20);
             this.txt_pic.TabIndex = 38;
             this.txt_pic.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
