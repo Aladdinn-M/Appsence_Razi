@@ -25,7 +25,7 @@ namespace Appsence_Razi
             dataSet = ds;
             this.filter = filter;
         }
-        public void charging()
+        public void chargingData()
         {
             report.SetDataSource(dataSet);
             report.SetParameterValue("chemain",Application.StartupPath + "\\pics\\");
@@ -35,9 +35,7 @@ namespace Appsence_Razi
 
         private void form_printing_Load(object sender, EventArgs e)
         {
-            charging();
-
-
+            chargingData();
         }
     }
 }
