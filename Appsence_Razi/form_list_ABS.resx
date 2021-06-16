@@ -130,6 +130,17 @@
         bIW/uCZc/iFa3TK/+cvq9h//AYNYUwjtrwWbAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btn_printAll.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJwAAAAtCAYAAABbLgKdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEDSURBVHhe7d2hTURBGIXRaQTe2x4QOEgwKIoibDaooQIK
+        AEmwGCw10AAKA7uYIUPGkKzjcdW5yXG//PRMMYtvqm2e6+7+8KY1WNqqfj72xkZupazqx9PR9Us7v7yF
+        xR1vnttct68jt1J6hfsOYSm9sZGb4Ph/giNKcEQJjijBESU4ogRHlOCIEhxRgiNKcEQJjijBESU4ogRH
+        lOCIEhxRgiNKcEQJjijBESU4ogRHlOCIEhxRgiNKcEQJjijBESU4ogRHlOCIEhxRgiNKcEQJjijBESU4
+        on4F19/QP1k/7D2Evzq7umtT/Xofuf38RHM61d1brxCW1mM7qNuLkZtZaqV8AwtjjLBAS25zAAAAAElF
+        TkSuQmCC
+</value>
+  </data>
   <data name="btn_print.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO

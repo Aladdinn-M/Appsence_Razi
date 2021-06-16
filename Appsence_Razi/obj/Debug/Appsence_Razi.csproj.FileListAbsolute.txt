@@ -94,3 +94,4 @@ C:\Users\Aladdin\Source\Repos\Appsence_Razi\Appsence_Razi\obj\Debug\Appsence_Raz
 C:\Users\Aladdin\Source\Repos\Appsence_Razi\Appsence_Razi\obj\Debug\Appsence_Razi.Properties.Resources.resources
 C:\Users\Aladdin\Source\Repos\Appsence_Razi\Appsence_Razi\obj\Debug\Appsence_Razi.csproj.GenerateResource.Cache
 C:\Users\Aladdin\Source\Repos\Appsence_Razi\Appsence_Razi\obj\Debug\Appsence_Razi.form_admin.resources
+C:\Users\Aladdin\Source\Repos\Appsence_Razi\Appsence_Razi\obj\Debug\Appsence_Razi.form_printing2.resources

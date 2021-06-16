@@ -430,7 +430,6 @@
             this.DP_dateRecrut.Size = new System.Drawing.Size(281, 39);
             this.DP_dateRecrut.TabIndex = 5;
             this.DP_dateRecrut.Value = new System.DateTime(2021, 5, 12, 23, 5, 42, 0);
-            this.DP_dateRecrut.onValueChanged += new System.EventHandler(this.DP_dateRecrut_onValueChanged);
             // 
             // txt_matricule
             // 

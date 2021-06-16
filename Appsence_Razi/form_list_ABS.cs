@@ -188,6 +188,31 @@ namespace Appsence_Razi
             cn.Close();
         }
 
-        
+        private void btn_print_Click(object sender, EventArgs e)
+        {
+            if (list_personnel.SelectedIndex != -1)
+            {
+                cn.Open();
+                report_absence r = new report_absence();
+                string filter = "{PERSONNEL.MATRICULE}=" + get_Matricule(list_personnel.GetItemText(list_personnel.SelectedItem));
+                cn.Close();
+                form_printing2 f = new form_printing2(r, filter);
+                f.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("selectionnez une personne !!");
+            }
+        }
+            
+
+        private void btn_printAll_Click(object sender, EventArgs e)
+        {
+            cn.Open();
+            report_absence r = new report_absence();
+            cn.Close();
+            form_printing2 f = new form_printing2(r);
+            f.ShowDialog();
+        }
     }
 }

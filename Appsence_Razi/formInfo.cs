@@ -241,18 +241,14 @@ namespace Appsence_Razi
             PICBOX.Load(@"pics\shadow-profile.jpg");
             form_printing f = new form_printing(r, ds,filter);
             f.ShowDialog();
+            try { PICBOX.Load(@"pics\" + txt_pic.Text); } catch { PICBOX.Load(@"pics\shadow-profile.jpg"); }
         }
-
         private void btn_printAll_Click(object sender, EventArgs e)
         {
              report_all r = new report_all();
             form_printing f = new form_printing(r, ds);
             f.ShowDialog();
         }
-
-        private void DP_dateRecrut_onValueChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

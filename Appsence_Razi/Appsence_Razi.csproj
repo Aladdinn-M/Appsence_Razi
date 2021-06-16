@@ -158,6 +158,12 @@
     <Compile Include="form_printing.Designer.cs">
       <DependentUpon>form_printing.cs</DependentUpon>
     </Compile>
+    <Compile Include="form_printing2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_printing2.Designer.cs">
+      <DependentUpon>form_printing2.cs</DependentUpon>
+    </Compile>
     <Compile Include="person_report.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -166,6 +172,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report_absence.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>report_absence.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="report_all.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -196,6 +208,9 @@
     <EmbeddedResource Include="form_printing.resx">
       <DependentUpon>form_printing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="form_printing2.resx">
+      <DependentUpon>form_printing2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="person_report.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>person_report.cs</LastGenOutput>
@@ -209,6 +224,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="report_absence.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>report_absence.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="report_all.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>report_all.cs</LastGenOutput>

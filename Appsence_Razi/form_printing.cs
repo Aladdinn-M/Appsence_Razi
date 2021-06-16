@@ -28,14 +28,17 @@ namespace Appsence_Razi
         public void chargingData()
         {
             report.SetDataSource(dataSet);
-            report.SetParameterValue("chemain",Application.StartupPath + "\\pics\\");
+            try
+            { report.SetParameterValue("chemain", Application.StartupPath + "\\pics\\");} catch{}
             crystalReportViewer1.ReportSource = report;
             crystalReportViewer1.SelectionFormula = filter;
         }
 
         private void form_printing_Load(object sender, EventArgs e)
         {
-            chargingData();
+            chargingData(); 
         }
+
+        
     }
 }
