@@ -316,6 +316,7 @@
             this.ClientSize = new System.Drawing.Size(539, 392);
             this.Controls.Add(this.panelforms);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formConnexion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formConnexion";
