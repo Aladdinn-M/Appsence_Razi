@@ -44,6 +44,7 @@ namespace Appsence_Razi
             txt_prenom.Enabled = v;
             txt_niveauS.Enabled = v;
             txt_Recherch.Enabled = !v;
+            txt_tele.Enabled = v;
 
             btn_showCV.Visible = !v;
             btn_cv.Visible = v;
@@ -96,7 +97,7 @@ namespace Appsence_Razi
             txt_nom.DataBindings.Add("text", bsrecrut, "NOM_RECRUT", true);
             txt_prenom.DataBindings.Add("text", bsrecrut, "PRENOM_RECRUT", true);
             DP_dateNaiss.DataBindings.Add("value", bsrecrut, "DATE_NAISSANCE_RECRUT", true);
-
+            txt_tele.DataBindings.Add("text", bsrecrut, "tele", true);
             
             activatmod(false);
         }
