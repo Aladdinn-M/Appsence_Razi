@@ -33,6 +33,7 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panelforms = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btn_printAll = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_print = new Bunifu.UI.WinForms.BunifuImageButton();
             this.txt_NBabs = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -52,7 +53,6 @@
             this.Ddw_fonction = new Bunifu.UI.WinForms.BunifuDropdown();
             this.list_personnel = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_printAll = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panelforms.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,6 +91,70 @@
             this.panelforms.Size = new System.Drawing.Size(974, 600);
             this.panelforms.TabIndex = 11;
             // 
+            // btn_printAll
+            // 
+            this.btn_printAll.AllowToggling = false;
+            this.btn_printAll.AnimationSpeed = 200;
+            this.btn_printAll.AutoGenerateColors = false;
+            this.btn_printAll.BackColor = System.Drawing.Color.Transparent;
+            this.btn_printAll.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.btn_printAll.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_printAll.BackgroundImage")));
+            this.btn_printAll.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_printAll.ButtonText = "Imprimer tout";
+            this.btn_printAll.ButtonTextMarginLeft = 0;
+            this.btn_printAll.ColorContrastOnClick = 45;
+            this.btn_printAll.ColorContrastOnHover = 45;
+            this.btn_printAll.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btn_printAll.CustomizableEdges = borderEdges1;
+            this.btn_printAll.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_printAll.DisabledBorderColor = System.Drawing.Color.Empty;
+            this.btn_printAll.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_printAll.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_printAll.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btn_printAll.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.btn_printAll.ForeColor = System.Drawing.Color.White;
+            this.btn_printAll.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_printAll.IconMarginLeft = 11;
+            this.btn_printAll.IconPadding = 10;
+            this.btn_printAll.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_printAll.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btn_printAll.IdleBorderRadius = 3;
+            this.btn_printAll.IdleBorderThickness = 1;
+            this.btn_printAll.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.btn_printAll.IdleIconLeftImage = null;
+            this.btn_printAll.IdleIconRightImage = null;
+            this.btn_printAll.IndicateFocus = false;
+            this.btn_printAll.Location = new System.Drawing.Point(806, 339);
+            this.btn_printAll.Name = "btn_printAll";
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties1.BorderRadius = 3;
+            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties1.ForeColor = System.Drawing.Color.White;
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.btn_printAll.onHoverState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.BorderRadius = 3;
+            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.ForeColor = System.Drawing.Color.White;
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.btn_printAll.OnPressedState = stateProperties2;
+            this.btn_printAll.Size = new System.Drawing.Size(156, 45);
+            this.btn_printAll.TabIndex = 69;
+            this.btn_printAll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_printAll.TextMarginLeft = 0;
+            this.btn_printAll.UseDefaultRadiusAndThickness = true;
+            this.btn_printAll.Click += new System.EventHandler(this.btn_printAll_Click);
+            // 
             // btn_print
             // 
             this.btn_print.ActiveImage = null;
@@ -108,7 +172,7 @@
             this.btn_print.ImageSize = new System.Drawing.Size(61, 57);
             this.btn_print.ImageZoomSize = new System.Drawing.Size(71, 67);
             this.btn_print.InitialImage = ((System.Drawing.Image)(resources.GetObject("btn_print.InitialImage")));
-            this.btn_print.Location = new System.Drawing.Point(838, 237);
+            this.btn_print.Location = new System.Drawing.Point(849, 238);
             this.btn_print.Name = "btn_print";
             this.btn_print.Rotation = 0;
             this.btn_print.ShowActiveImage = true;
@@ -129,7 +193,7 @@
             this.txt_NBabs.BackColor = System.Drawing.Color.Transparent;
             this.txt_NBabs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_NBabs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txt_NBabs.Location = new System.Drawing.Point(646, 100);
+            this.txt_NBabs.Location = new System.Drawing.Point(634, 99);
             this.txt_NBabs.Name = "txt_NBabs";
             this.txt_NBabs.Size = new System.Drawing.Size(0, 24);
             this.txt_NBabs.TabIndex = 67;
@@ -140,7 +204,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label8.Location = new System.Drawing.Point(426, 100);
+            this.label8.Location = new System.Drawing.Point(414, 99);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(202, 24);
             this.label8.TabIndex = 65;
@@ -163,11 +227,11 @@
             this.txt_commmentaire.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
             this.txt_commmentaire.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_commmentaire.LineThickness = 3;
-            this.txt_commmentaire.Location = new System.Drawing.Point(561, 468);
+            this.txt_commmentaire.Location = new System.Drawing.Point(549, 467);
             this.txt_commmentaire.Margin = new System.Windows.Forms.Padding(6);
             this.txt_commmentaire.MaxLength = 32767;
             this.txt_commmentaire.Name = "txt_commmentaire";
-            this.txt_commmentaire.Size = new System.Drawing.Size(205, 34);
+            this.txt_commmentaire.Size = new System.Drawing.Size(239, 34);
             this.txt_commmentaire.TabIndex = 64;
             this.txt_commmentaire.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -177,7 +241,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label4.Location = new System.Drawing.Point(420, 479);
+            this.label4.Location = new System.Drawing.Point(408, 478);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(124, 18);
             this.label4.TabIndex = 63;
@@ -189,7 +253,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label7.Location = new System.Drawing.Point(426, 144);
+            this.label7.Location = new System.Drawing.Point(414, 143);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(138, 18);
             this.label7.TabIndex = 62;
@@ -237,11 +301,11 @@
             this.txt_type_abs.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
             this.txt_type_abs.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_type_abs.LineThickness = 3;
-            this.txt_type_abs.Location = new System.Drawing.Point(561, 419);
+            this.txt_type_abs.Location = new System.Drawing.Point(549, 418);
             this.txt_type_abs.Margin = new System.Windows.Forms.Padding(6);
             this.txt_type_abs.MaxLength = 32767;
             this.txt_type_abs.Name = "txt_type_abs";
-            this.txt_type_abs.Size = new System.Drawing.Size(205, 34);
+            this.txt_type_abs.Size = new System.Drawing.Size(239, 34);
             this.txt_type_abs.TabIndex = 58;
             this.txt_type_abs.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -325,7 +389,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label3.Location = new System.Drawing.Point(417, 427);
+            this.label3.Location = new System.Drawing.Point(405, 426);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 18);
             this.label3.TabIndex = 53;
@@ -368,9 +432,9 @@
             this.ddw_months.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
             this.ddw_months.ItemHeight = 26;
             this.ddw_months.ItemHighLightColor = System.Drawing.Color.LightBlue;
-            this.ddw_months.Location = new System.Drawing.Point(423, 161);
+            this.ddw_months.Location = new System.Drawing.Point(411, 160);
             this.ddw_months.Name = "ddw_months";
-            this.ddw_months.Size = new System.Drawing.Size(343, 32);
+            this.ddw_months.Size = new System.Drawing.Size(377, 32);
             this.ddw_months.TabIndex = 9;
             this.ddw_months.Text = null;
             this.ddw_months.SelectedValueChanged += new System.EventHandler(this.ddw_months_SelectedValueChanged);
@@ -384,9 +448,9 @@
             this.list_date.FormatString = "d";
             this.list_date.FormattingEnabled = true;
             this.list_date.ItemHeight = 24;
-            this.list_date.Location = new System.Drawing.Point(423, 193);
+            this.list_date.Location = new System.Drawing.Point(411, 192);
             this.list_date.Name = "list_date";
-            this.list_date.Size = new System.Drawing.Size(343, 192);
+            this.list_date.Size = new System.Drawing.Size(377, 192);
             this.list_date.Sorted = true;
             this.list_date.TabIndex = 8;
             this.list_date.SelectedValueChanged += new System.EventHandler(this.list_date_SelectedValueChanged);
@@ -447,70 +511,6 @@
             this.label1.Size = new System.Drawing.Size(319, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Details d\'absence";
-            // 
-            // btn_printAll
-            // 
-            this.btn_printAll.AllowToggling = false;
-            this.btn_printAll.AnimationSpeed = 200;
-            this.btn_printAll.AutoGenerateColors = false;
-            this.btn_printAll.BackColor = System.Drawing.Color.Transparent;
-            this.btn_printAll.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.btn_printAll.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_printAll.BackgroundImage")));
-            this.btn_printAll.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_printAll.ButtonText = "Imprimer tout";
-            this.btn_printAll.ButtonTextMarginLeft = 0;
-            this.btn_printAll.ColorContrastOnClick = 45;
-            this.btn_printAll.ColorContrastOnHover = 45;
-            this.btn_printAll.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btn_printAll.CustomizableEdges = borderEdges1;
-            this.btn_printAll.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_printAll.DisabledBorderColor = System.Drawing.Color.Empty;
-            this.btn_printAll.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_printAll.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_printAll.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btn_printAll.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
-            this.btn_printAll.ForeColor = System.Drawing.Color.White;
-            this.btn_printAll.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_printAll.IconMarginLeft = 11;
-            this.btn_printAll.IconPadding = 10;
-            this.btn_printAll.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_printAll.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.btn_printAll.IdleBorderRadius = 3;
-            this.btn_printAll.IdleBorderThickness = 1;
-            this.btn_printAll.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.btn_printAll.IdleIconLeftImage = null;
-            this.btn_printAll.IdleIconRightImage = null;
-            this.btn_printAll.IndicateFocus = false;
-            this.btn_printAll.Location = new System.Drawing.Point(793, 524);
-            this.btn_printAll.Name = "btn_printAll";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties1.BorderRadius = 3;
-            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties1.ForeColor = System.Drawing.Color.White;
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.btn_printAll.onHoverState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.BorderRadius = 3;
-            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties2.BorderThickness = 1;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.ForeColor = System.Drawing.Color.White;
-            stateProperties2.IconLeftImage = null;
-            stateProperties2.IconRightImage = null;
-            this.btn_printAll.OnPressedState = stateProperties2;
-            this.btn_printAll.Size = new System.Drawing.Size(156, 45);
-            this.btn_printAll.TabIndex = 69;
-            this.btn_printAll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_printAll.TextMarginLeft = 0;
-            this.btn_printAll.UseDefaultRadiusAndThickness = true;
-            this.btn_printAll.Click += new System.EventHandler(this.btn_printAll_Click);
             // 
             // form_list_ABS
             // 
