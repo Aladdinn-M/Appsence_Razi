@@ -67,6 +67,9 @@
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.panelforms = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.txt_tele = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btn_showCV = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.move_first = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.move_perview = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -97,9 +100,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_cv = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.txt_tele = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panelforms.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,6 +149,54 @@
             this.panelforms.Quality = 10;
             this.panelforms.Size = new System.Drawing.Size(974, 600);
             this.panelforms.TabIndex = 10;
+            // 
+            // txt_tele
+            // 
+            this.txt_tele.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_tele.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_tele.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tele.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.txt_tele.Location = new System.Drawing.Point(594, 145);
+            this.txt_tele.Name = "txt_tele";
+            this.txt_tele.Size = new System.Drawing.Size(296, 22);
+            this.txt_tele.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.label6.Location = new System.Drawing.Point(398, 147);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 18);
+            this.label6.TabIndex = 93;
+            this.label6.Text = "Tel :";
+            // 
+            // bunifuMaterialTextbox1
+            // 
+            this.bunifuMaterialTextbox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.bunifuMaterialTextbox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.bunifuMaterialTextbox1.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuMaterialTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox1.Enabled = false;
+            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox1.HintText = "";
+            this.bunifuMaterialTextbox1.isPassword = false;
+            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuMaterialTextbox1.LineThickness = 3;
+            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(587, 140);
+            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuMaterialTextbox1.MaxLength = 32767;
+            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
+            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(311, 34);
+            this.bunifuMaterialTextbox1.TabIndex = 94;
+            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // btn_showCV
             // 
@@ -894,7 +942,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label2.Location = new System.Drawing.Point(397, 392);
+            this.label2.Location = new System.Drawing.Point(399, 384);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 18);
             this.label2.TabIndex = 84;
@@ -1197,54 +1245,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // txt_tele
-            // 
-            this.txt_tele.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_tele.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_tele.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tele.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.txt_tele.Location = new System.Drawing.Point(594, 145);
-            this.txt_tele.Name = "txt_tele";
-            this.txt_tele.Size = new System.Drawing.Size(296, 22);
-            this.txt_tele.TabIndex = 2;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label6.Location = new System.Drawing.Point(398, 147);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 18);
-            this.label6.TabIndex = 93;
-            this.label6.Text = "Tel :";
-            // 
-            // bunifuMaterialTextbox1
-            // 
-            this.bunifuMaterialTextbox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox1.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuMaterialTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Enabled = false;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(587, 140);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuMaterialTextbox1.MaxLength = 32767;
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(311, 34);
-            this.bunifuMaterialTextbox1.TabIndex = 94;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // formRecrut
             // 
