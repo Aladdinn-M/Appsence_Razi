@@ -72,25 +72,25 @@
             this.move_perview = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.move_next = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.move_last = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.lbl_age = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txt_nom = new System.Windows.Forms.TextBox();
+            this.txt_prenom = new System.Windows.Forms.TextBox();
+            this.txt_niveauS = new System.Windows.Forms.TextBox();
             this.btn_cv = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_add = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_edit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_delete = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_validate = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_cancel = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.txt_nom = new System.Windows.Forms.TextBox();
-            this.txt_prenom = new System.Windows.Forms.TextBox();
-            this.txt_niveauS = new System.Windows.Forms.TextBox();
-            this.DP_dateNaiss = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.a7 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.a6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.a5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_age = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.a5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.a7 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.a6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.DP_dateNaiss = new Bunifu.Framework.UI.BunifuDatepicker();
             this.Ddw_specialite = new Bunifu.UI.WinForms.BunifuDropdown();
             this.txt_Recherch = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.list_recrute = new System.Windows.Forms.ListBox();
@@ -202,7 +202,7 @@
             stateProperties2.IconRightImage = null;
             this.btn_showCV.OnPressedState = stateProperties2;
             this.btn_showCV.Size = new System.Drawing.Size(310, 39);
-            this.btn_showCV.TabIndex = 92;
+            this.btn_showCV.TabIndex = 7;
             this.btn_showCV.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_showCV.TextMarginLeft = 0;
             this.btn_showCV.UseDefaultRadiusAndThickness = true;
@@ -266,7 +266,7 @@
             stateProperties4.IconRightImage = null;
             this.move_first.OnPressedState = stateProperties4;
             this.move_first.Size = new System.Drawing.Size(55, 45);
-            this.move_first.TabIndex = 87;
+            this.move_first.TabIndex = 91;
             this.move_first.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.move_first.TextMarginLeft = 0;
             this.move_first.UseDefaultRadiusAndThickness = true;
@@ -464,30 +464,39 @@
             this.move_last.UseDefaultRadiusAndThickness = true;
             this.move_last.Click += new System.EventHandler(this.move_last_Click);
             // 
-            // lbl_age
+            // txt_nom
             // 
-            this.lbl_age.AutoSize = true;
-            this.lbl_age.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_age.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_age.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.lbl_age.Location = new System.Drawing.Point(827, 312);
-            this.lbl_age.Margin = new System.Windows.Forms.Padding(0);
-            this.lbl_age.Name = "lbl_age";
-            this.lbl_age.Size = new System.Drawing.Size(81, 25);
-            this.lbl_age.TabIndex = 86;
-            this.lbl_age.Text = "( Age )";
+            this.txt_nom.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_nom.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_nom.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.txt_nom.Location = new System.Drawing.Point(596, 167);
+            this.txt_nom.Name = "txt_nom";
+            this.txt_nom.Size = new System.Drawing.Size(296, 22);
+            this.txt_nom.TabIndex = 3;
             // 
-            // label2
+            // txt_prenom
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label2.Location = new System.Drawing.Point(399, 369);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 18);
-            this.label2.TabIndex = 84;
-            this.label2.Text = "Date de naissance :";
+            this.txt_prenom.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_prenom.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_prenom.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_prenom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.txt_prenom.Location = new System.Drawing.Point(597, 215);
+            this.txt_prenom.Name = "txt_prenom";
+            this.txt_prenom.Size = new System.Drawing.Size(296, 22);
+            this.txt_prenom.TabIndex = 4;
+            // 
+            // txt_niveauS
+            // 
+            this.txt_niveauS.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_niveauS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_niveauS.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txt_niveauS.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_niveauS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.txt_niveauS.Location = new System.Drawing.Point(596, 263);
+            this.txt_niveauS.Name = "txt_niveauS";
+            this.txt_niveauS.Size = new System.Drawing.Size(296, 22);
+            this.txt_niveauS.TabIndex = 5;
             // 
             // btn_cv
             // 
@@ -611,7 +620,7 @@
             stateProperties14.IconRightImage = null;
             this.btn_add.OnPressedState = stateProperties14;
             this.btn_add.Size = new System.Drawing.Size(123, 41);
-            this.btn_add.TabIndex = 79;
+            this.btn_add.TabIndex = 8;
             this.btn_add.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_add.TextMarginLeft = 0;
             this.btn_add.UseDefaultRadiusAndThickness = true;
@@ -675,7 +684,7 @@
             stateProperties16.IconRightImage = null;
             this.btn_edit.OnPressedState = stateProperties16;
             this.btn_edit.Size = new System.Drawing.Size(123, 41);
-            this.btn_edit.TabIndex = 80;
+            this.btn_edit.TabIndex = 9;
             this.btn_edit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_edit.TextMarginLeft = 0;
             this.btn_edit.UseDefaultRadiusAndThickness = true;
@@ -739,7 +748,7 @@
             stateProperties18.IconRightImage = null;
             this.btn_delete.OnPressedState = stateProperties18;
             this.btn_delete.Size = new System.Drawing.Size(123, 41);
-            this.btn_delete.TabIndex = 83;
+            this.btn_delete.TabIndex = 10;
             this.btn_delete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_delete.TextMarginLeft = 0;
             this.btn_delete.UseDefaultRadiusAndThickness = true;
@@ -803,7 +812,7 @@
             stateProperties20.IconRightImage = null;
             this.btn_validate.OnPressedState = stateProperties20;
             this.btn_validate.Size = new System.Drawing.Size(180, 45);
-            this.btn_validate.TabIndex = 81;
+            this.btn_validate.TabIndex = 11;
             this.btn_validate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_validate.TextMarginLeft = 0;
             this.btn_validate.UseDefaultRadiusAndThickness = true;
@@ -867,61 +876,109 @@
             stateProperties22.IconRightImage = null;
             this.btn_cancel.OnPressedState = stateProperties22;
             this.btn_cancel.Size = new System.Drawing.Size(180, 45);
-            this.btn_cancel.TabIndex = 82;
+            this.btn_cancel.TabIndex = 12;
             this.btn_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_cancel.TextMarginLeft = 0;
             this.btn_cancel.UseDefaultRadiusAndThickness = true;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
-            // txt_nom
+            // label2
             // 
-            this.txt_nom.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_nom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_nom.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.txt_nom.Location = new System.Drawing.Point(596, 167);
-            this.txt_nom.Name = "txt_nom";
-            this.txt_nom.Size = new System.Drawing.Size(296, 22);
-            this.txt_nom.TabIndex = 77;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.label2.Location = new System.Drawing.Point(399, 369);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(165, 18);
+            this.label2.TabIndex = 84;
+            this.label2.Text = "Date de naissance :";
             // 
-            // txt_prenom
+            // lbl_age
             // 
-            this.txt_prenom.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_prenom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_prenom.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_prenom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.txt_prenom.Location = new System.Drawing.Point(597, 215);
-            this.txt_prenom.Name = "txt_prenom";
-            this.txt_prenom.Size = new System.Drawing.Size(296, 22);
-            this.txt_prenom.TabIndex = 75;
+            this.lbl_age.AutoSize = true;
+            this.lbl_age.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_age.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_age.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.lbl_age.Location = new System.Drawing.Point(827, 312);
+            this.lbl_age.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_age.Name = "lbl_age";
+            this.lbl_age.Size = new System.Drawing.Size(81, 25);
+            this.lbl_age.TabIndex = 86;
+            this.lbl_age.Text = "( Age )";
             // 
-            // txt_niveauS
+            // label7
             // 
-            this.txt_niveauS.BackColor = System.Drawing.SystemColors.Control;
-            this.txt_niveauS.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_niveauS.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txt_niveauS.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_niveauS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.txt_niveauS.Location = new System.Drawing.Point(596, 263);
-            this.txt_niveauS.Name = "txt_niveauS";
-            this.txt_niveauS.Size = new System.Drawing.Size(296, 22);
-            this.txt_niveauS.TabIndex = 76;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.label7.Location = new System.Drawing.Point(400, 319);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(165, 18);
+            this.label7.TabIndex = 71;
+            this.label7.Text = "Date de naissance :";
             // 
-            // DP_dateNaiss
+            // label5
             // 
-            this.DP_dateNaiss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.DP_dateNaiss.BorderRadius = 0;
-            this.DP_dateNaiss.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DP_dateNaiss.ForeColor = System.Drawing.Color.White;
-            this.DP_dateNaiss.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DP_dateNaiss.FormatCustom = null;
-            this.DP_dateNaiss.Location = new System.Drawing.Point(589, 307);
-            this.DP_dateNaiss.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.DP_dateNaiss.Name = "DP_dateNaiss";
-            this.DP_dateNaiss.Size = new System.Drawing.Size(235, 40);
-            this.DP_dateNaiss.TabIndex = 78;
-            this.DP_dateNaiss.Value = new System.DateTime(2021, 5, 12, 22, 37, 38, 204);
-            this.DP_dateNaiss.onValueChanged += new System.EventHandler(this.DP_dateNaiss_onValueChanged);
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.label5.Location = new System.Drawing.Point(400, 269);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(140, 18);
+            this.label5.TabIndex = 70;
+            this.label5.Text = "Niveau scolaire :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.label4.Location = new System.Drawing.Point(400, 219);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 18);
+            this.label4.TabIndex = 69;
+            this.label4.Text = "Prenom :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.label3.Location = new System.Drawing.Point(400, 169);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 18);
+            this.label3.TabIndex = 68;
+            this.label3.Text = "Nom :";
+            // 
+            // a5
+            // 
+            this.a5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.a5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.a5.BackColor = System.Drawing.SystemColors.Control;
+            this.a5.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.a5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.a5.Enabled = false;
+            this.a5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.a5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.a5.HintForeColor = System.Drawing.Color.Empty;
+            this.a5.HintText = "";
+            this.a5.isPassword = false;
+            this.a5.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.a5.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.a5.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.a5.LineThickness = 3;
+            this.a5.Location = new System.Drawing.Point(589, 258);
+            this.a5.Margin = new System.Windows.Forms.Padding(6);
+            this.a5.MaxLength = 32767;
+            this.a5.Name = "a5";
+            this.a5.Size = new System.Drawing.Size(311, 34);
+            this.a5.TabIndex = 74;
+            this.a5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // a7
             // 
@@ -973,78 +1030,21 @@
             this.a6.TabIndex = 73;
             this.a6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // a5
+            // DP_dateNaiss
             // 
-            this.a5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.a5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.a5.BackColor = System.Drawing.SystemColors.Control;
-            this.a5.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.a5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.a5.Enabled = false;
-            this.a5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.a5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.a5.HintForeColor = System.Drawing.Color.Empty;
-            this.a5.HintText = "";
-            this.a5.isPassword = false;
-            this.a5.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.a5.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.a5.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
-            this.a5.LineThickness = 3;
-            this.a5.Location = new System.Drawing.Point(589, 258);
-            this.a5.Margin = new System.Windows.Forms.Padding(6);
-            this.a5.MaxLength = 32767;
-            this.a5.Name = "a5";
-            this.a5.Size = new System.Drawing.Size(311, 34);
-            this.a5.TabIndex = 74;
-            this.a5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label7.Location = new System.Drawing.Point(400, 319);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(165, 18);
-            this.label7.TabIndex = 71;
-            this.label7.Text = "Date de naissance :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label5.Location = new System.Drawing.Point(400, 269);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 18);
-            this.label5.TabIndex = 70;
-            this.label5.Text = "Niveau scolaire :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label4.Location = new System.Drawing.Point(400, 219);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 18);
-            this.label4.TabIndex = 69;
-            this.label4.Text = "Prenom :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
-            this.label3.Location = new System.Drawing.Point(400, 169);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 18);
-            this.label3.TabIndex = 68;
-            this.label3.Text = "Nom :";
+            this.DP_dateNaiss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(130)))), ((int)(((byte)(158)))));
+            this.DP_dateNaiss.BorderRadius = 0;
+            this.DP_dateNaiss.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DP_dateNaiss.ForeColor = System.Drawing.Color.White;
+            this.DP_dateNaiss.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DP_dateNaiss.FormatCustom = null;
+            this.DP_dateNaiss.Location = new System.Drawing.Point(589, 307);
+            this.DP_dateNaiss.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.DP_dateNaiss.Name = "DP_dateNaiss";
+            this.DP_dateNaiss.Size = new System.Drawing.Size(235, 40);
+            this.DP_dateNaiss.TabIndex = 6;
+            this.DP_dateNaiss.Value = new System.DateTime(2021, 5, 12, 22, 37, 38, 204);
+            this.DP_dateNaiss.onValueChanged += new System.EventHandler(this.DP_dateNaiss_onValueChanged);
             // 
             // Ddw_specialite
             // 
