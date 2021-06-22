@@ -47,6 +47,7 @@
             this.gunaAnimateWindow1 = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.gunaAnimateWindow2 = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelforms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -158,6 +159,7 @@
             this.btn_connect.ShowSizeMarkers = false;
             this.btn_connect.Size = new System.Drawing.Size(87, 80);
             this.btn_connect.TabIndex = 65;
+            this.toolTip1.SetToolTip(this.btn_connect, "se connecter");
             this.btn_connect.ToolTipText = "";
             this.btn_connect.WaitOnLoad = false;
             this.btn_connect.Zoom = 10;
@@ -354,5 +356,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lbl_error;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

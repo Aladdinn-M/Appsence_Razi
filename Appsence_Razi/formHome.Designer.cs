@@ -63,6 +63,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.gunaAnimateWindow1 = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panelhome.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnBIG_Abs)).BeginInit();
@@ -297,6 +298,8 @@
             // 
             // btnhome
             // 
+            this.btnhome.AccessibleDescription = "";
+            this.btnhome.AccessibleName = "";
             this.btnhome.BackColor = System.Drawing.Color.Transparent;
             this.btnhome.Image = ((System.Drawing.Image)(resources.GetObject("btnhome.Image")));
             this.btnhome.ImageActive = null;
@@ -307,6 +310,7 @@
             this.btnhome.TabIndex = 6;
             this.btnhome.TabStop = false;
             this.btnhome.Tag = "Absence";
+            this.toolTip1.SetToolTip(this.btnhome, "Accueil");
             this.btnhome.Zoom = 10;
             this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
             // 
@@ -321,6 +325,7 @@
             this.btncv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btncv.TabIndex = 5;
             this.btncv.TabStop = false;
+            this.toolTip1.SetToolTip(this.btncv, "recrutement");
             this.btncv.Zoom = 10;
             this.btncv.Click += new System.EventHandler(this.btncv_Click);
             // 
@@ -335,6 +340,7 @@
             this.btninfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btninfo.TabIndex = 4;
             this.btninfo.TabStop = false;
+            this.toolTip1.SetToolTip(this.btninfo, "informations");
             this.btninfo.Zoom = 10;
             this.btninfo.Click += new System.EventHandler(this.btninfo_Click);
             // 
@@ -350,6 +356,7 @@
             this.btnabse.TabIndex = 3;
             this.btnabse.TabStop = false;
             this.btnabse.Tag = "Absence";
+            this.toolTip1.SetToolTip(this.btnabse, "Absence");
             this.btnabse.Zoom = 10;
             this.btnabse.Click += new System.EventHandler(this.btnabse_Click);
             // 
@@ -472,6 +479,7 @@
             this.btn_admin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_admin.TabIndex = 9;
             this.btn_admin.TabStop = false;
+            this.toolTip1.SetToolTip(this.btn_admin, "gestion des utilisateurs ");
             this.btn_admin.Zoom = 10;
             this.btn_admin.Click += new System.EventHandler(this.btn_admin_Click);
             // 
@@ -486,6 +494,7 @@
             this.btn_detaills.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_detaills.TabIndex = 7;
             this.btn_detaills.TabStop = false;
+            this.toolTip1.SetToolTip(this.btn_detaills, "details d\'absence");
             this.btn_detaills.Zoom = 10;
             this.btn_detaills.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
@@ -500,6 +509,7 @@
             this.btn_logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_logout.TabIndex = 8;
             this.btn_logout.TabStop = false;
+            this.toolTip1.SetToolTip(this.btn_logout, "se deconnecter");
             this.btn_logout.Zoom = 10;
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
@@ -597,5 +607,6 @@
         private Bunifu.Framework.UI.BunifuImageButton btnBIG_detaills;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuImageButton btn_admin;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
